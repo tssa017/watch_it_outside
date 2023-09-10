@@ -1,0 +1,86 @@
+/* IMPORTS */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import './normalize.css';
+/* @import url('https://fonts.googleapis.com/'); */
+
+/* GLOBAL */
+:root {
+    --primary-color: #fca311;
+    --secondary-color: #d9d9d9;
+    --tertiary-color: #14213d;
+}
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+body {
+    /* font-family: #;  */
+    background-color: var(--primary-color);
+    color: var(--tertiary-color);
+}
+
+a {
+    text-decoration: none;
+    color: var(--tertiary-color);
+}
+
+img {
+    object-fit: cover;
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    margin: 3rem;
+}
+
+/* .logo-pc {
+    width: 100px;
+}
+
+.logo-mobile {
+    display: none;
+} */
+
+/* @media screen and (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .logo-pc {
+        display: none;
+    }
+
+    .logo-mobile {
+        display: block;
+        margin-top: 20px;
+        width: 160px;
+        height: 80px;
+    }
+} */
+
+/* END HEADER */
+
+/* FOOTER */
+.footer {
+    display: flex;
+    margin: 3rem;
+}
+
+/* @media screen and (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        margin: 0;
+    }
+} */
+
+/* END FOOTER */
