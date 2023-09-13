@@ -1,4 +1,4 @@
-/* IMPORTS */
+/* Imports */
 
 /* ! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com */
 
@@ -534,9 +534,16 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-/* @import url('https://fonts.googleapis.com/'); */
+.list-none {
+  list-style-type: none;
+}
 
-/* GLOBAL */
+.text-red-200 {
+  --tw-text-opacity: 1;
+  color: rgb(254 202 202 / var(--tw-text-opacity));
+}
+
+/* Global styles */
 
 :root {
   --primary-color: #fca311;
@@ -544,7 +551,6 @@ video {
   --tertiary-color: #14213d;
 }
 
-*,
 ::before,
 ::after {
   margin: 0;
@@ -554,7 +560,7 @@ video {
 }
 
 body {
-  /* font-family: #;  */
+  font-family: 'Inter', sans-serif;
   background-color: var(--primary-color);
   color: var(--tertiary-color);
 }
@@ -569,53 +575,6 @@ img {
      object-fit: cover;
 }
 
-/* HEADER */
-
-.header {
-  display: flex;
-  margin: 3rem;
+.hover\:list-disc:hover {
+  list-style-type: disc;
 }
-
-/* .logo-pc {
-    width: 100px;
-}
-
-.logo-mobile {
-    display: none;
-} */
-
-/* @media screen and (max-width: 768px) {
-    .header {
-        flex-direction: column;
-        margin: 0;
-    }
-
-    .logo-pc {
-        display: none;
-    }
-
-    .logo-mobile {
-        display: block;
-        margin-top: 20px;
-        width: 160px;
-        height: 80px;
-    }
-} */
-
-/* END HEADER */
-
-/* FOOTER */
-
-.footer {
-  display: flex;
-  margin: 3rem;
-}
-
-/* @media screen and (max-width: 768px) {
-    .footer {
-        flex-direction: column;
-        margin: 0;
-    }
-} */
-
-/* END FOOTER */
