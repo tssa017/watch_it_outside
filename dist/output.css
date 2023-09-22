@@ -670,6 +670,11 @@ video {
   padding-bottom: 0.25rem;
 }
 
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
 .pl-8 {
   padding-left: 2rem;
 }
