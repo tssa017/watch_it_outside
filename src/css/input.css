@@ -4,33 +4,3 @@
 @tailwind utilities;
 @import './normalize.css';
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
-/* Global styles */
-:root {
-    --primary-color: #fca311;
-    --secondary-color: #d9d9d9;
-    --tertiary-color: #14213d;
-}
-
-::before,
-::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    overflow-x: hidden;
-}
-
-body {
-    font-family: 'Inter', sans-serif;
-    background-color: var(--primary-color);
-    color: var(--tertiary-color);
-}
-
-a {
-    text-decoration: none;
-    color: var(--tertiary-color);
-}
-
-img {
-    object-fit: cover;
-}

@@ -12,21 +12,19 @@
             crossorigin="anonymous"
         />
     </head>
-    <body>
+    <body class="font-inter">
         <!-- Header section -->
-        <header>
-            <a href="./index.html">
-                <img
-                    src="./src/img/logo.png"
-                    alt="Watch it outside Boston edition logo"
-                />
-            </a>
-            <nav>
-                <ul class="list-none hover:list-disc"">
-                    <li>
+        <header class="bg-yellow-300 p-8 flex items-center justify-between">
+            <div class="flex-col">
+                <h1 class="p-4 text-6xl">Watch it outside</h1>
+                <h2 class="p-4 text-5xl">Boston edition</h2>
+            </div>
+            <nav class="p-8 text-xl">
+                <ul class="flex justify-end space-x-4 list-none">
+                    <li class="hover:font-bold">
                         <a href="./pages/about.html">About</a>
                     </li>
-                    <li>
+                    <li class="hover:font-bold">
                         <a href="./pages/booking.html">Booking</a>
                     </li>
                 </ul>
@@ -35,40 +33,91 @@
         <!-- End header section -->
 
         <!-- Main section -->
-        <main>
-            <div>
-                <img src="./src/img/the_man_on_the_boat.jpg" class="object-cover h-48 w-96">
-            </div>
-            <div>
-                <img src="./src/img/sisters.jpg" class="object-cover h-48 w-96">
-            </div>
-            <div>
-                <img src="./src/img/one_date.jpg" class="object-cover h-48 w-96">
-            </div>
+        <main class="bg-gray-100 flex py-8">
+            <a href="#">
+                <div class="relative p-8">
+                    <img
+                        src="./src/img/the_man_on_the_boat.jpg"
+                        class="object-cover h-48 w-96 rounded-t-md translate-y-2"
+                    />
+                    <div class="absolute top-12 left-8 p-6 rounded-t-md">
+                        <p class="text-2xl font-bold text-white">
+                            Feature Film
+                        </p>
+                    </div>
+                    <div class="bg-white py-6 px-2 rounded-b-md">
+                        <p class="py-2 text-xl font-bold">
+                            The Man on the Boat
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <p class="text-m">From director Theressa Malone</p>
+                            <p class="text-xs">
+                                <strong>March 8 |</strong> All audiences
+                            </p>
+                        </div>
+                    </div>
+                </div></a
+            >
+            <a href="#">
+                <div class="p-8">
+                    <img
+                        src="./src/img/sisters.jpg"
+                        class="object-cover h-48 w-96 rounded-t-md translate-y-2"
+                    />
+                    <div class="bg-white py-6 px-2 rounded-b-md">
+                        <p class="py-2 text-xl font-bold">Sisters</p>
+                        <div class="flex items-center justify-between">
+                            <p class="text-m">From director Mathias Wulfman</p>
+                            <p class="text-xs">
+                                <strong>March 9 |</strong> All audiences
+                            </p>
+                        </div>
+                    </div>
+                </div></a
+            >
+            <a href="#">
+                <div class="p-8">
+                    <img
+                        src="./src/img/one_date.jpg"
+                        class="object-cover h-48 w-96 rounded-t-md translate-y-2"
+                    />
+                    <div class="bg-white py-6 px-2 rounded-b-md">
+                        <p class="py-2 text-xl font-bold">One Date</p>
+                        <div class="flex items-center justify-between">
+                            <p class="text-m">From director Kath Mansfield</p>
+                            <p class="text-xs">
+                                <strong>March 10 |</strong> All audiences
+                            </p>
+                        </div>
+                    </div>
+                </div></a
+            >
         </main>
         <!-- End main section -->
 
         <!-- Footer section -->
-        <footer>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="./pages/volunteer.html">Volunteer</a>
-                    </li>
-                    <li>
-                        <a href="./pages/partners.html">Our partners</a>
-                    </li>
-                    <li>
+        <footer class="bg-yellow-300 flex items-center">
+            <nav class="p-8 text-xl">
+                <ul class="flex space-x-4 list-none">
+                    <li class="hover:font-bold">
                         <a href="./pages/contact.html">Contact us</a>
                     </li>
-                    <li>
-                        <a href="./pages/programme.html">Programme</a>
+                    <li class="hover:font-bold">
+                        <a href="./pages/booking.html">Booking</a>
                     </li>
                 </ul>
             </nav>
-            <a href="#"><i class="fa-brands fa-twitter"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <div class="pl-8 text-xl">
+                <a href="#"
+                    ><i class="fa-brands fa-twitter pr-4 hover:font-bold"></i
+                ></a>
+                <a href="#"
+                    ><i class="fa-brands fa-instagram pr-4 hover:font-bold"></i
+                ></a>
+                <a href="#"
+                    ><i class="fa-brands fa-facebook hover:font-bold"></i
+                ></a>
+            </div>
         </footer>
         <!-- End footer section -->
     </body>
