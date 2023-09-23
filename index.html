@@ -169,7 +169,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="p-8 hover:scale-110">
+                <!-- Film card -->
+                <div class="p-8 hover:scale-110" onclick="openModal()">
                     <img
                         src="./src/img/parapluie.jpg"
                         class="object-cover h-48 w-96 rounded-t-md translate-y-2"
@@ -181,6 +182,59 @@
                             <p class="text-xs">
                                 <strong>March 10 |</strong> All audiences
                             </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Film card modal -->
+                <div
+                    id="myModal"
+                    class="fixed inset-0 flex items-center justify-center z-50 hidden"
+                >
+                    <div
+                        class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"
+                    ></div>
+                    <div
+                        class="modal-container bg-white w-11/12 md:max-w-md mx-auto rounded shadow-lg z-50 overflow-y-auto"
+                    >
+                        <!-- Modal config -->
+                        <div class="modal-content py-4 text-left px-6">
+                            <span
+                                class="modal-close cursor-pointer absolute top-0 right-0 p-4"
+                                onclick="closeModal()"
+                            >
+                                <svg
+                                    class="fill-current h-6 w-6 text-gray-700"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 20 20"
+                                >
+                                    <path
+                                        class="heroicon-ui"
+                                        d="M6.293 6.293a1 1 0 011.414 0L10 8.586l2.293-2.293a1 1 0 111.414 1.414L11.414 10l2.293 2.293a1 1 0 01-1.414 1.414L10 11.414l-2.293 2.293a1 1 0 01-1.414-1.414L8.586 10 6.293 7.707a1 1 0 010-1.414z"
+                                    ></path>
+                                </svg>
+                            </span>
+                            <!-- Modal content -->
+                            <div class="p-8">
+                                <h2 class="text-xl font-bold py-3">
+                                    Parapluie
+                                </h2>
+                                <h3>Directed by Solomon Aldridge</h3>
+                                <p class="py-3">
+                                    <strong>Duration:</strong> 120mins
+                                </p>
+                                <p class="pt-3">
+                                    Aldridge's first feature length film has
+                                    received praise from... Aldridge's first
+                                    feature length film has received praise
+                                    from... Aldridge's first feature length film
+                                    has received praise from... Aldridge's first
+                                    feature length film has received praise
+                                    from... from... Aldridge's first feature
+                                    length film has received praise from...
+                                    Aldridge's first feature length film has
+                                    received praise from...
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -213,5 +267,6 @@
             </div>
         </footer>
         <!-- End footer section -->
+        <script src="./src/js/script.js" />
     </body>
 </html>
