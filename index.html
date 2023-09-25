@@ -36,7 +36,9 @@
         <main class="bg-gray-100 flex-col py-8">
             <h2 class="px-10 pt-4 pb-1 text-4xl font-bold">Programme</h2>
             <div class="flex">
-                <div class="relative p-8 hover:scale-110">
+            <!-- Film card -->
+            <div class="flex">
+                <div class="relative p-8 hover:scale-110" onclick="openModal('modal1')">
                     <img
                         src="./src/img/the_man_on_the_boat.jpg"
                         class="object-cover h-48 w-96 rounded-t-md translate-y-2"
@@ -47,9 +49,7 @@
                         </p>
                     </div>
                     <div class="bg-white py-6 px-2 rounded-b-md">
-                        <p class="py-2 text-xl font-bold">
-                            The Man on the Boat
-                        </p>
+                        <p class="py-2 text-xl font-bold">The Man on the Boat</p>
                         <div class="flex items-center justify-between">
                             <p class="text-m">From director Theressa Malone</p>
                             <p class="text-xs">
@@ -58,119 +58,64 @@
                         </div>
                     </div>
                 </div>
-                <div class="p-8 hover:scale-110">
-                    <img
-                        src="./src/img/sisters.jpg"
-                        class="object-cover h-48 w-96 rounded-t-md translate-y-2"
-                    />
-                    <div class="bg-white py-6 px-2 rounded-b-md">
-                        <p class="py-2 text-xl font-bold">Sisters</p>
-                        <div class="flex items-center justify-between">
-                            <p class="text-m">From director Mathias Wulfman</p>
-                            <p class="text-xs">
-                                <strong>March 9 |</strong> All audiences
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="p-8 hover:scale-110">
-                    <img
-                        src="./src/img/one_date.jpg"
-                        class="object-cover h-48 w-96 rounded-t-md translate-y-2"
-                    />
-                    <div class="bg-white py-6 px-2 rounded-b-md">
-                        <p class="py-2 text-xl font-bold">One Date</p>
-                        <div class="flex items-center justify-between">
-                            <p class="text-m">From director Kath Mansfield</p>
-                            <p class="text-xs">
-                                <strong>March 10 |</strong> All audiences
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="flex">
-                <div class="p-8 hover:scale-110">
-                    <img
-                        src="./src/img/fire.jpg"
-                        class="object-cover h-48 w-96 rounded-t-md translate-y-2"
-                    />
-                    <div class="bg-white py-6 px-2 rounded-b-md">
-                        <p class="py-2 text-xl font-bold">Fire</p>
-                        <div class="flex items-center justify-between">
-                            <p class="text-m">From director Tom Routledge</p>
-                            <p class="text-xs">
-                                <strong>March 8 |</strong> All audiences
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="p-8 hover:scale-110">
-                    <img
-                        src="./src/img/going_nowhere.jpg"
-                        class="object-cover h-48 w-96 rounded-t-md translate-y-2"
-                    />
-                    <div class="bg-white py-6 px-2 rounded-b-md">
-                        <p class="py-2 text-xl font-bold">Going Nowhere</p>
-                        <div class="flex items-center justify-between">
-                            <p class="text-m">From director Hilary Martin</p>
-                            <p class="text-xs">
-                                <strong>March 9 |</strong> All audiences
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="p-8 hover:scale-110">
-                    <img
-                        src="./src/img/Hanna.jpg"
-                        class="object-cover h-48 w-96 rounded-t-md translate-y-2"
-                    />
-                    <div class="bg-white py-6 px-2 rounded-b-md">
-                        <p class="py-2 text-xl font-bold">Hanna</p>
-                        <div class="flex items-center justify-between">
-                            <p class="text-m">From director Selma Grange</p>
-                            <p class="text-xs">
-                                <strong>March 10 |</strong> All audiences
-                            </p>
+                <!-- Film card modal -->
+                <div
+                    id="modal1"
+                    class="fixed inset-0 flex items-center justify-center z-50 hidden"
+                >
+                    <div
+                        class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"
+                    ></div>
+                    <div
+                        class="modal-container bg-white w-11/12 md:max-w-md mx-auto rounded shadow-lg z-50 overflow-y-auto"
+                    >
+                        <!-- Modal config -->
+                        <div class="modal-content py-4 text-left px-6">
+                            <span
+                                class="modal-close cursor-pointer absolute top-0 right-0 p-4"
+                                onclick="closeModal('modal1')"
+                            >
+                                <svg
+                                    class="fill-current h-6 w-6 text-gray-700"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 20 20"
+                                >
+                                    <path
+                                        class="heroicon-ui"
+                                        d="M6.293 6.293a1 1 0 011.414 0L10 8.586l2.293-2.293a1 1 0 111.414 1.414L11.414 10l2.293 2.293a1 1 0 01-1.414 1.414L10 11.414l-2.293 2.293a1 1 0 01-1.414-1.414L8.586 10 6.293 7.707a1 1 0 010-1.414z"
+                                    ></path>
+                                </svg>
+                            </span>
+                            <!-- Modal content -->
+                            <div class="p-8">
+                                <h2 class="text-xl font-bold py-3">
+                                    The Man on the Boat
+                                </h2>
+                                <h3>Directed by Theressa Malone</h3>
+                                <p class="py-3">
+                                    <strong>Duration:</strong> 110mins
+                                </p>
+                                <p class="pt-3">
+                                   Malone's first feature length film has
+                                    received praise from... Aldridge's first
+                                    feature length film has received praise
+                                    from... Aldridge's first feature length film
+                                    has received praise from... Aldridge's first
+                                    feature length film has received praise
+                                    from... from... Aldridge's first feature
+                                    length film has received praise from...
+                                    Aldridge's first feature length film has
+                                    received praise from...
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <!-- Film card -->
             <div class="flex">
-                <div class="p-8 hover:scale-110">
-                    <img
-                        src="./src/img/kings_match.jpg"
-                        class="object-cover h-48 w-96 rounded-t-md translate-y-2"
-                    />
-                    <div class="bg-white py-6 px-2 rounded-b-md">
-                        <p class="py-2 text-xl font-bold">King's Match</p>
-                        <div class="flex items-center justify-between">
-                            <p class="text-m">
-                                From director Herbert Ostrowski
-                            </p>
-                            <p class="text-xs">
-                                <strong>March 8 |</strong> All audiences
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="p-8 hover:scale-110">
-                    <img
-                        src="./src/img/oblivion.jpg"
-                        class="object-cover h-48 w-96 rounded-t-md translate-y-2"
-                    />
-                    <div class="bg-white py-6 px-2 rounded-b-md">
-                        <p class="py-2 text-xl font-bold">Oblivion</p>
-                        <div class="flex items-center justify-between">
-                            <p class="text-m">From director Maria Bridge</p>
-                            <p class="text-xs">
-                                <strong>March 9 |</strong> All audiences
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Film card -->
-                <div class="p-8 hover:scale-110" onclick="openModal()">
+                <div class="p-8 hover:scale-110" onclick="openModal('modal2')">
                     <img
                         src="./src/img/parapluie.jpg"
                         class="object-cover h-48 w-96 rounded-t-md translate-y-2"
@@ -187,7 +132,7 @@
                 </div>
                 <!-- Film card modal -->
                 <div
-                    id="myModal"
+                    id="modal2"
                     class="fixed inset-0 flex items-center justify-center z-50 hidden"
                 >
                     <div
@@ -200,7 +145,7 @@
                         <div class="modal-content py-4 text-left px-6">
                             <span
                                 class="modal-close cursor-pointer absolute top-0 right-0 p-4"
-                                onclick="closeModal()"
+                                onclick="closeModal('modal2')"
                             >
                                 <svg
                                     class="fill-current h-6 w-6 text-gray-700"
@@ -239,6 +184,458 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Film card -->
+            <div class="flex">
+                <div class="p-8 hover:scale-110" onclick="openModal('modal3')">
+                    <img
+                        src="./src/img/sisters.jpg"
+                        class="object-cover h-48 w-96 rounded-t-md translate-y-2"
+                    />
+                    <div class="bg-white py-6 px-2 rounded-b-md">
+                        <p class="py-2 text-xl font-bold">Sisters</p>
+                        <div class="flex items-center justify-between">
+                            <p class="text-m">From director Mathias Wulfman</p>
+                            <p class="text-xs">
+                                <strong>March 10 |</strong> All audiences
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Film card modal -->
+                <div
+                    id="modal3"
+                    class="fixed inset-0 flex items-center justify-center z-50 hidden"
+                >
+                    <div
+                        class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"
+                    ></div>
+                    <div
+                        class="modal-container bg-white w-11/12 md:max-w-md mx-auto rounded shadow-lg z-50 overflow-y-auto"
+                    >
+                        <!-- Modal config -->
+                        <div class="modal-content py-4 text-left px-6">
+                            <span
+                                class="modal-close cursor-pointer absolute top-0 right-0 p-4"
+                                onclick="closeModal('modal3')"
+                            >
+                                <svg
+                                    class="fill-current h-6 w-6 text-gray-700"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 20 20"
+                                >
+                                    <path
+                                        class="heroicon-ui"
+                                        d="M6.293 6.293a1 1 0 011.414 0L10 8.586l2.293-2.293a1 1 0 111.414 1.414L11.414 10l2.293 2.293a1 1 0 01-1.414 1.414L10 11.414l-2.293 2.293a1 1 0 01-1.414-1.414L8.586 10 6.293 7.707a1 1 0 010-1.414z"
+                                    ></path>
+                                </svg>
+                            </span>
+                            <!-- Modal content -->
+                            <div class="p-8">
+                                <h2 class="text-xl font-bold py-3">
+                                    Sisters
+                                </h2>
+                                <h3>Directed by Mathias Wulfman</h3>
+                                <p class="py-3">
+                                    <strong>Duration:</strong> 115mins
+                                </p>
+                                <p class="pt-3">
+                                    Wulfman's first feature length film has
+                                    received praise from...
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Film card -->
+            <div class="flex">
+                <div class="p-8 hover:scale-110" onclick="openModal('modal4')">
+                    <img
+                        src="./src/img/one_date.jpg"
+                        class="object-cover h-48 w-96 rounded-t-md translate-y-2"
+                    />
+                    <div class="bg-white py-6 px-2 rounded-b-md">
+                        <p class="py-2 text-xl font-bold">One Date</p>
+                        <div class="flex items-center justify-between">
+                            <p class="text-m">From director Kath Mansfield</p>
+                            <p class="text-xs">
+                                <strong>March 8 |</strong> Mature audiences
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Film card modal -->
+                <div
+                    id="modal4"
+                    class="fixed inset-0 flex items-center justify-center z-50 hidden"
+                >
+                    <div
+                        class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"
+                    ></div>
+                    <div
+                        class="modal-container bg-white w-11/12 md:max-w-md mx-auto rounded shadow-lg z-50 overflow-y-auto"
+                    >
+                        <!-- Modal config -->
+                        <div class="modal-content py-4 text-left px-6">
+                            <span
+                                class="modal-close cursor-pointer absolute top-0 right-0 p-4"
+                                onclick="closeModal('modal4')"
+                            >
+                                <svg
+                                    class="fill-current h-6 w-6 text-gray-700"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 20 20"
+                                >
+                                    <path
+                                        class="heroicon-ui"
+                                        d="M6.293 6.293a1 1 0 011.414 0L10 8.586l2.293-2.293a1 1 0 111.414 1.414L11.414 10l2.293 2.293a1 1 0 01-1.414 1.414L10 11.414l-2.293 2.293a1 1 0 01-1.414-1.414L8.586 10 6.293 7.707a1 1 0 010-1.414z"
+                                    ></path>
+                                </svg>
+                            </span>
+                            <!-- Modal content -->
+                            <div class="p-8">
+                                <h2 class="text-xl font-bold py-3">
+                                    One Date
+                                </h2>
+                                <h3>Directed by Kath Mansfield</h3>
+                                <p class="py-3">
+                                    <strong>Duration:</strong> 120mins
+                                </p>
+                                <p class="pt-3">
+                                    Aldridge's first feature length film has
+                                    received praise from... Aldridge's first
+                                    feature length film has received praise
+                                    from... Aldridge's first feature length film
+                                    has received praise from... Aldridge's first
+                                    feature length film has received praise
+                                    from... from... Aldridge's first feature
+                                    length film has received praise from...
+                                    Aldridge's first feature length film has
+                                    received praise from...
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Film card -->
+            <div class="flex">
+                <div class="p-8 hover:scale-110" onclick="openModal('modal5')">
+                    <img
+                        src="./src/img/fire.jpg"
+                        class="object-cover h-48 w-96 rounded-t-md translate-y-2"
+                    />
+                    <div class="bg-white py-6 px-2 rounded-b-md">
+                        <p class="py-2 text-xl font-bold">Fire</p>
+                        <div class="flex items-center justify-between">
+                            <p class="text-m">From director Selma Grange</p>
+                            <p class="text-xs">
+                                <strong>March 9 |</strong> All audiences
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Film card modal -->
+                <div
+                    id="modal5"
+                    class="fixed inset-0 flex items-center justify-center z-50 hidden"
+                >
+                    <div
+                        class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"
+                    ></div>
+                    <div
+                        class="modal-container bg-white w-11/12 md:max-w-md mx-auto rounded shadow-lg z-50 overflow-y-auto"
+                    >
+                        <!-- Modal config -->
+                        <div class="modal-content py-4 text-left px-6">
+                            <span
+                                class="modal-close cursor-pointer absolute top-0 right-0 p-4"
+                                onclick="closeModal('modal5')"
+                            >
+                                <svg
+                                    class="fill-current h-6 w-6 text-gray-700"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 20 20"
+                                >
+                                    <path
+                                        class="heroicon-ui"
+                                        d="M6.293 6.293a1 1 0 011.414 0L10 8.586l2.293-2.293a1 1 0 111.414 1.414L11.414 10l2.293 2.293a1 1 0 01-1.414 1.414L10 11.414l-2.293 2.293a1 1 0 01-1.414-1.414L8.586 10 6.293 7.707a1 1 0 010-1.414z"
+                                    ></path>
+                                </svg>
+                            </span>
+                            <!-- Modal content -->
+                            <div class="p-8">
+                                <h2 class="text-xl font-bold py-3">
+                                    Fire
+                                </h2>
+                                <h3>Directed by Selma Grange's</h3>
+                                <p class="py-3">
+                                    <strong>Duration:</strong> 110mins
+                                </p>
+                                <p class="pt-3">
+                                    Grange's first 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Film card -->
+            <div class="flex">
+                <div class="p-8 hover:scale-110" onclick="openModal('modal6')">
+                    <img
+                        src="./src/img/going_nowhere.jpg"
+                        class="object-cover h-48 w-96 rounded-t-md translate-y-2"
+                    />
+                    <div class="bg-white py-6 px-2 rounded-b-md">
+                        <p class="py-2 text-xl font-bold">Going Nowhere</p>
+                        <div class="flex items-center justify-between">
+                            <p class="text-m">From director Hannah Martin</p>
+                            <p class="text-xs">
+                                <strong>March 10 |</strong> Mature audiences
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Film card modal -->
+                <div
+                    id="modal6"
+                    class="fixed inset-0 flex items-center justify-center z-50 hidden"
+                >
+                    <div
+                        class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"
+                    ></div>
+                    <div
+                        class="modal-container bg-white w-11/12 md:max-w-md mx-auto rounded shadow-lg z-50 overflow-y-auto"
+                    >
+                        <!-- Modal config -->
+                        <div class="modal-content py-4 text-left px-6">
+                            <span
+                                class="modal-close cursor-pointer absolute top-0 right-0 p-4"
+                                onclick="closeModal('modal6')"
+                            >
+                                <svg
+                                    class="fill-current h-6 w-6 text-gray-700"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 20 20"
+                                >
+                                    <path
+                                        class="heroicon-ui"
+                                        d="M6.293 6.293a1 1 0 011.414 0L10 8.586l2.293-2.293a1 1 0 111.414 1.414L11.414 10l2.293 2.293a1 1 0 01-1.414 1.414L10 11.414l-2.293 2.293a1 1 0 01-1.414-1.414L8.586 10 6.293 7.707a1 1 0 010-1.414z"
+                                    ></path>
+                                </svg>
+                            </span>
+                            <!-- Modal content -->
+                            <div class="p-8">
+                                <h2 class="text-xl font-bold py-3">
+                                    ---
+                                </h2>
+                                <h3>Directed by Hannah Martin</h3>
+                                <p class="py-3">
+                                    <strong>Duration:</strong> 100mins
+                                </p>
+                                <p class="pt-3">
+                                    Martin's first 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Film card -->
+            <div class="flex">
+                <div class="p-8 hover:scale-110" onclick="openModal('modal7')">
+                    <img
+                        src="./src/img/Hanna.jpg"
+                        class="object-cover h-48 w-96 rounded-t-md translate-y-2"
+                    />
+                    <div class="bg-white py-6 px-2 rounded-b-md">
+                        <p class="py-2 text-xl font-bold">Hanna</p>
+                        <div class="flex items-center justify-between">
+                            <p class="text-m">From director Phillip Toms</p>
+                            <p class="text-xs">
+                                <strong>March 8 |</strong> All audiences
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Film card modal -->
+                <div
+                    id="modal7"
+                    class="fixed inset-0 flex items-center justify-center z-50 hidden"
+                >
+                    <div
+                        class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"
+                    ></div>
+                    <div
+                        class="modal-container bg-white w-11/12 md:max-w-md mx-auto rounded shadow-lg z-50 overflow-y-auto"
+                    >
+                        <!-- Modal config -->
+                        <div class="modal-content py-4 text-left px-6">
+                            <span
+                                class="modal-close cursor-pointer absolute top-0 right-0 p-4"
+                                onclick="closeModal('modal7')"
+                            >
+                                <svg
+                                    class="fill-current h-6 w-6 text-gray-700"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 20 20"
+                                >
+                                    <path
+                                        class="heroicon-ui"
+                                        d="M6.293 6.293a1 1 0 011.414 0L10 8.586l2.293-2.293a1 1 0 111.414 1.414L11.414 10l2.293 2.293a1 1 0 01-1.414 1.414L10 11.414l-2.293 2.293a1 1 0 01-1.414-1.414L8.586 10 6.293 7.707a1 1 0 010-1.414z"
+                                    ></path>
+                                </svg>
+                            </span>
+                            <!-- Modal content -->
+                            <div class="p-8">
+                                <h2 class="text-xl font-bold py-3">
+                                    Hanna
+                                </h2>
+                                <h3>Directed by Phillip Toms</h3>
+                                <p class="py-3">
+                                    <strong>Duration:</strong> 135mins
+                                </p>
+                                <p class="pt-3">
+                                    Toms' first...
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Film card -->
+            <div class="flex">
+                <div class="p-8 hover:scale-110" onclick="openModal('modal8')">
+                    <img
+                        src="./src/img/kings_match.jpg"
+                        class="object-cover h-48 w-96 rounded-t-md translate-y-2"
+                    />
+                    <div class="bg-white py-6 px-2 rounded-b-md">
+                        <p class="py-2 text-xl font-bold">King's Match</p>
+                        <div class="flex items-center justify-between">
+                            <p class="text-m">From director Orla Puklowski</p>
+                            <p class="text-xs">
+                                <strong>March 9 |</strong> Mature audiences
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Film card modal -->
+                <div
+                    id="modal8"
+                    class="fixed inset-0 flex items-center justify-center z-50 hidden"
+                >
+                    <div
+                        class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"
+                    ></div>
+                    <div
+                        class="modal-container bg-white w-11/12 md:max-w-md mx-auto rounded shadow-lg z-50 overflow-y-auto"
+                    >
+                        <!-- Modal config -->
+                        <div class="modal-content py-4 text-left px-6">
+                            <span
+                                class="modal-close cursor-pointer absolute top-0 right-0 p-4"
+                                onclick="closeModal('modal8')"
+                            >
+                                <svg
+                                    class="fill-current h-6 w-6 text-gray-700"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 20 20"
+                                >
+                                    <path
+                                        class="heroicon-ui"
+                                        d="M6.293 6.293a1 1 0 011.414 0L10 8.586l2.293-2.293a1 1 0 111.414 1.414L11.414 10l2.293 2.293a1 1 0 01-1.414 1.414L10 11.414l-2.293 2.293a1 1 0 01-1.414-1.414L8.586 10 6.293 7.707a1 1 0 010-1.414z"
+                                    ></path>
+                                </svg>
+                            </span>
+                            <!-- Modal content -->
+                            <div class="p-8">
+                                <h2 class="text-xl font-bold py-3">
+                                    King's Match
+                                </h2>
+                                <h3>Directed by Orla Puklowski</h3>
+                                <p class="py-3">
+                                    <strong>Duration:</strong> 127mins
+                                </p>
+                                <p class="pt-3">
+                                    Puklowski's first...
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Film card -->
+            <div class="flex">
+                <div class="p-8 hover:scale-110" onclick="openModal('modal9')">
+                    <img
+                        src="./src/img/oblivion.jpg"
+                        class="object-cover h-48 w-96 rounded-t-md translate-y-2"
+                    />
+                    <div class="bg-white py-6 px-2 rounded-b-md">
+                        <p class="py-2 text-xl font-bold">Oblivion</p>
+                        <div class="flex items-center justify-between">
+                            <p class="text-m">From director Sandra Flag</p>
+                            <p class="text-xs">
+                                <strong>March 10 |</strong> Mature audiences
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Film card modal -->
+                <div
+                    id="modal9"
+                    class="fixed inset-0 flex items-center justify-center z-50 hidden"
+                >
+                    <div
+                        class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"
+                    ></div>
+                    <div
+                        class="modal-container bg-white w-11/12 md:max-w-md mx-auto rounded shadow-lg z-50 overflow-y-auto"
+                    >
+                        <!-- Modal config -->
+                        <div class="modal-content py-4 text-left px-6">
+                            <span
+                                class="modal-close cursor-pointer absolute top-0 right-0 p-4"
+                                onclick="closeModal('modal9')"
+                            >
+                                <svg
+                                    class="fill-current h-6 w-6 text-gray-700"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 20 20"
+                                >
+                                    <path
+                                        class="heroicon-ui"
+                                        d="M6.293 6.293a1 1 0 011.414 0L10 8.586l2.293-2.293a1 1 0 111.414 1.414L11.414 10l2.293 2.293a1 1 0 01-1.414 1.414L10 11.414l-2.293 2.293a1 1 0 01-1.414-1.414L8.586 10 6.293 7.707a1 1 0 010-1.414z"
+                                    ></path>
+                                </svg>
+                            </span>
+                            <!-- Modal content -->
+                            <div class="p-8">
+                                <h2 class="text-xl font-bold py-3">
+                                    Oblivion
+                                </h2>
+                                <h3>Directed by Sandra Flag</h3>
+                                <p class="py-3">
+                                    <strong>Duration:</strong> 147mins
+                                </p>
+                                <p class="pt-3">
+                                    Flag's first...
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
         </main>
         <!-- End main section -->
 

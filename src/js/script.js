@@ -1,9 +1,9 @@
-// Function to open the modal
-function openModal() {
-    document.getElementById('myModal').classList.remove('hidden');
+function openModal(modalId) {
+    const modal = document.getElementById(modalId);
+    modal.classList.remove('hidden');
 }
 
-// Function to close the modal
-function closeModal() {
-    document.getElementById('myModal').classList.add('hidden');
+function closeModal(modalId) {
+    const modal = document.getElementById(modalId);
+    modal.classList.add('hidden');
 }
