@@ -4,7 +4,7 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="shortcut icon" type="image/png" href="../img/logo.png" />
-        <title>Watch it outside Boston edition</title>
+        <title>Booking | Watch it outside Boston edition</title>
         <link rel="stylesheet" href="../../dist/output.css" />
         <link
             rel="stylesheet"
@@ -21,7 +21,7 @@
                     <h2 class="p-4 text-5xl">Boston edition</h2>
                 </a>
             </div>
-            <nav class="p-8 text-xl">
+            <nav class="p-8 text-2xl">
                 <ul class="flex justify-end space-x-4 list-none">
                     <li class="hover:font-bold">
                         <a href="./about.html">About</a>
@@ -35,43 +35,50 @@
         <!-- End header section -->
 
         <!-- Main section -->
-        <main class="bg-gray-100 flex-col py-8">
-            <h2 class="px-8 pt-4 pb-1 text-5xl font-bold">Book your tickets</h2>
-            <div class="flex-col px-8 pt-4 pb-1">
+        <main class="bg-gray-100 flex-col p-10">
+            <h2 class="pt-4 pb-1 text-5xl font-bold">Book your tickets</h2>
+            <div class="flex-col pt-4 pb-1">
+                <h2 class="text-2xl py-3 font-bold">
+                    First in first served! We only have 1500 spaces at the
+                    festival. Pre-register now to secure your spot!
+                </h2>
                 <h3 class="text-2xl">
-                    To pre-register for the festival, please complete and submit
-                    the following registration form
+                    To pre-register, please complete and submit the following
+                    registration form
                 </h3>
                 <form
                     action="https://formsubmit.co/your@email.com"
                     method="POST"
                     class="pt-8"
                 >
-                    <p class="text-lg py-4">Name:</p>
+                    <p class="text-lg py-4 font-bold">Name:</p>
                     <input
                         type="text"
                         name="name"
+                        class="rounded-lg p-4 w-full"
                         placeholder="Name"
                         required
                     />
-                    <p class="text-lg py-4">Email:</p>
+                    <p class="text-lg py-4 font-bold">Email:</p>
                     <input
                         type="email"
                         name="email"
+                        class="rounded-lg p-4 w-full"
                         placeholder="Email"
                         required
                     />
-                    <p class="text-lg py-4">Phone number:</p>
+                    <p class="text-lg py-4 font-bold">Phone number:</p>
                     <input
                         type="phone"
                         name="phone"
+                        class="rounded-lg p-4 w-full"
                         placeholder="Phone"
                         required
                     />
-                    <p class="text-lg pb-4" for="tickets"></p>
+                    <p class="text-lg py-4 rounded-lg font-bold">
                         Select number of tickets:
                     </p>
-                    <select name="tickets">
+                    <select name="tickets" class="rounded-lg p-4">
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -83,15 +90,24 @@
                         <option value="9">9</option>
                         <option value="10">10</option>
                     </select>
-                    <p class="text-lg py-4">Special requests or comments:</p>
+                    <p class="text-lg py-4 rounded-lg font-bold">
+                        Special requests or comments:
+                    </p>
                     <textarea
                         placeholder="Enter your message..."
                         name="message"
                         rows="10"
+                        class="rounded-lg p-4 w-full"
                         required
                     ></textarea>
                     <div class="py-4">
-                        <button type="submit" class="bg-yellow-300 rounded-lg font-bold p-4" disabled>Submit!</button>
+                        <button
+                            type="submit"
+                            class="bg-yellow-300 rounded-lg font-bold p-4"
+                            disabled
+                        >
+                            Submit!
+                        </button>
                     </div>
                 </form>
             </div>
@@ -100,7 +116,7 @@
 
         <!-- Footer section -->
         <footer class="bg-yellow-300 flex items-center">
-            <nav class="p-12 text-xl">
+            <nav class="p-12 text-2xl">
                 <ul class="flex space-x-4 list-none">
                     <li class="hover:font-bold">
                         <a href="./contact.html">Contact us</a>
