@@ -2,7 +2,21 @@
 
 I built this fim festival's website as project 3 for the OpenClassrooms Full-stack Developer path. It is built with HTML and CSS with Bootstrap. The objective was to develop a first version of the site.
 
+## To view the project
+
+Clone the project
+
+````bash
+git clone git@github.com:tssa017/watch_it_outside.git
+
 ## For developers
+
+To install Tailwind CSS, use the following command:
+
+```bash
+npm install -D tailwindcss
+npx tailwindcss init
+````
 
 To compile the Tailwind CSS live, use the following command:
 
