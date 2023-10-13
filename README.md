@@ -4,7 +4,9 @@ I built this fim festival's website as project 3 for the OpenClassrooms Full-sta
 
 ## To view the project
 
-Clone the project
+Simply re-direct to [this netlify app](https://watch-it-outside-openclassrooms.netlify.app/)
+
+Or clone the project
 
 ```bash
 git clone git@github.com:tssa017/watch_it_outside.git
