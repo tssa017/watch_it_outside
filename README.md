@@ -6,8 +6,9 @@ I built this fim festival's website as project 3 for the OpenClassrooms Full-sta
 
 Clone the project
 
-````bash
+```bash
 git clone git@github.com:tssa017/watch_it_outside.git
+```
 
 ## For developers
 
@@ -16,7 +17,7 @@ To install Tailwind CSS, use the following command:
 ```bash
 npm install -D tailwindcss
 npx tailwindcss init
-````
+```
 
 To compile the Tailwind CSS live, use the following command:
 
