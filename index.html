@@ -23,12 +23,14 @@
     </head>
     <body class="font-inter">
         <!-- Header section -->
-        <header class="bg-yellow-300 p-8 flex items-center justify-between">
-            <div class="flex-col">
+        <header
+            class="bg-yellow-300 p-8 flex items-center justify-between flex-wrap"
+        >
+            <div class="flex-col md:flex-row">
                 <h1 class="p-4 text-6xl">Watch it outside</h1>
                 <h2 class="p-4 text-5xl">Boston edition</h2>
             </div>
-            <nav class="p-8 text-2xl">
+            <nav class="p-4 text-2xl">
                 <ul class="flex justify-end space-x-4 list-none">
                     <li class="hover:font-bold">
                         <a href="./src/pages/about.html">About</a>
@@ -695,28 +697,40 @@
         <!-- End main section -->
 
         <!-- Footer section -->
-        <footer class="bg-yellow-300 flex items-center">
-            <nav class="p-12 text-2xl">
+        <footer class="bg-yellow-300 flex">
+            <nav class="px-12 py-6 text-2xl flex-col">
                 <ul class="flex space-x-4 list-none">
                     <li class="hover:font-bold">
                         <a href="./src/pages/contact.html">Contact us</a>
                     </li>
-                    <li class="hover:font-bold">
+                    <li class="hover:font-bold pr-5">
                         <a href="./src/pages/booking.html">Booking</a>
                     </li>
                 </ul>
+                <ul class="flex flex-row pt-5">
+                    <li>
+                        <a href="https://twitter.com/"
+                            ><i
+                                class="fa-brands fa-twitter pr-4 hover:font-bold"
+                            ></i
+                        ></a>
+                    </li>
+                    <li>
+                        <a href="https://instagram.com/"
+                            ><i
+                                class="fa-brands fa-instagram pr-4 hover:font-bold"
+                            ></i
+                        ></a>
+                    </li>
+                    <li>
+                        <a href="https://facebook.com/"
+                            ><i
+                                class="fa-brands fa-facebook hover:font-bold"
+                            ></i
+                        ></a>
+                    </li>
+                </ul>
             </nav>
-            <div class="pl-8 text-xl">
-                <a href="https://twitter.com/"
-                    ><i class="fa-brands fa-twitter pr-4 hover:font-bold"></i
-                ></a>
-                <a href="https://instagram.com/"
-                    ><i class="fa-brands fa-instagram pr-4 hover:font-bold"></i
-                ></a>
-                <a href="https://facebook.com/"
-                    ><i class="fa-brands fa-facebook hover:font-bold"></i
-                ></a>
-            </div>
         </footer>
         <!-- End footer section -->
         <script defer>
